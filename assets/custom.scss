@@ -1,0 +1,26 @@
+// Override this file to add your own SCSS styling.
+@font-face {
+  font-family: 'Nova Square';
+    font-weight: normal;
+    font-style: normal;
+    src: local(''),
+       url('../fonts/novasquare-regular-webfont.woff2') format('woff2'), 
+       url('../fonts/novasquare-regular-webfont.woff') format('woff'); 
+}
+
+/* underline nav color*/
+.site-links a::after,
+.site-links a.active::after {
+  background-color: #FFD700;
+}
+
+/* size of text in footer*/
+.f7,
+figure figcaption p,
+figure figcaption h4,
+.post-body>.footnotes,
+.page-body>.footnotes,
+.post-body>table th,
+.page-body>table th {
+  font-size: 0.9rem;
+}
