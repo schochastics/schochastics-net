@@ -25,14 +25,14 @@ enableEmoji = true
     ordered = false
   [markup.highlight]
     # one of: https://xyproto.github.io/splash/docs/ 
-    style = "github"
+    style = "monokai"
     
 [params]
   orgName = "David Schoch"
   orgLocal = ""
   description = "A modern, beautiful, and easily configurable blog theme for Hugo."
-  favicon = "/img/favicon.ico"
-  logo = "/img/blogophonic-mark-dark.png"
+  favicon = "/favicon.ico"
+  logo = "/img/logo.svg"
   mainSections = ["blog", "project", "talk"]
   navallcaps = true
   # show/hide social icons in site header & footer
@@ -41,7 +41,7 @@ enableEmoji = true
   socialInFooter = false
   # Default image for social sharing and search engines. 
   # Place image file in `static` folder and specify image name here.
-  sharing_image = "/img/papillons.jpg"
+  sharing_image = "/img/logo.png"
   # Twitter username (without @). Used when a visitor shares your site on Twitter.
   twitter = "schochastics"
   
@@ -105,10 +105,6 @@ enableEmoji = true
       icon      = "r-project"
       icon_pack = "fab"
       url       = "https://schochastics.r-universe.dev"
-  [[params.social]]
-      icon      = "rss" # icon name without the 'fa-'
-      icon_pack = "fas"
-      url       = "/blog/index.xml"
 
 [taxonomies]
   category = "categories"
@@ -119,7 +115,7 @@ enableEmoji = true
   # Configure header 
   [[menu.header]]
     name = "About"
-    title = "About Blogophonic"
+    title = "About Me"
     url = "/about/"
     weight = 1
   [[menu.header]]
