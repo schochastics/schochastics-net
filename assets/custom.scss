@@ -24,3 +24,12 @@ figure figcaption h4,
 .page-body>table th {
   font-size: 0.9rem;
 }
+
+/* inline code */
+.post-body>p>code{
+  background-color: rgba(255,255,255,.1);
+}
+
+a.btn-links:hover{
+  background-color: rgba(255,255,255,.1)!important;
+}

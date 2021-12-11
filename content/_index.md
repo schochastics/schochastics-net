@@ -3,12 +3,14 @@ action_label: About Me &rarr;
 action_link: /about
 action_type: text
 description: >
-  I’m a PhD in Computer Science and currently employed as a Presidential Fellow at the University of Manchester in the Department of Sociology. I’m a mathematician by training and my research interests lie in the field of (social) network analysis. I am a R developer and I maintain the football analytics website [soccerverse](http://soccerverse.com).
+  I'm the **team lead** for "Transparent Social Analytics" at [GESIS](https://www.gesis.org/institut/abteilungen/computational-social-science).
+  I develop tools in [R](https://r-project.org/),
 image_left: true
 images:
 - img/logo.svg
 show_action_link: true
 show_social_links: true
+number_featured: 3
 subtitle: 
 text_align_left: true
 title: David Schoch

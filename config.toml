@@ -9,9 +9,9 @@ disqusShortname = "" # see params.utterances to use utterances instead of Disqus
 metaDataFormat = "yaml"
 footnoteReturnLinkContents = "&#8617;" # ↩
 # set deliberately low for testing choose your preffered number based on the blog layout you've chosen
-paginate = 5
+paginate = 20
 preserveTaxonomyNames = true
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$","\\.csv$"]
 enableEmoji = true
 
 [markup]
@@ -30,10 +30,10 @@ enableEmoji = true
 [params]
   orgName = "David Schoch"
   orgLocal = ""
-  description = "A modern, beautiful, and easily configurable blog theme for Hugo."
+  description = "I am the Team Lead for Transparanet Social Analytic at GESIS and an avid developer in R"
   favicon = "/favicon.ico"
   logo = "/img/logo.svg"
-  mainSections = ["blog", "project", "talk"]
+  mainSections = ["publications", "project", "dataviz"]
   navallcaps = true
   # show/hide social icons in site header & footer
   # configure social icons and links below in [[params.social]]
@@ -126,7 +126,7 @@ enableEmoji = true
   [[menu.header]]
     name = "Blog"
     title = "Blog"
-    url = "/blog/"
+    url = "http://blog.schochastics.net/"
     weight = 3
   [[menu.header]]
     name = "Projects"
@@ -134,9 +134,9 @@ enableEmoji = true
     url = "/project/"
     weight = 4
   [[menu.header]]
-    name = "Talks"
-    title = "Talks"
-    url = "/talk/"
+    name = "DataViz"
+    title = "Data Visualization Material"
+    url = "/dataviz/"
     weight = 5
 
 # Configure footer
