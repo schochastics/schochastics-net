@@ -8,6 +8,16 @@
        url('../fonts/novasquare-regular-webfont.woff') format('woff'); 
 }
 
+@media screen and (min-width: 56em) {
+  html {
+    font-size: 1.1em;
+  }
+}
+
+.anchor-link{
+  
+}
+
 /* underline nav color*/
 .site-links a::after,
 .site-links a.active::after {

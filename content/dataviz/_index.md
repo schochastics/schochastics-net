@@ -8,7 +8,7 @@ cascade:
   show_post_time: false
   
 description: |
-  Some of mt data visualization tutorials and projects, especially for networks.
+  Some of my data visualization tutorials and projects, especially for networks.
 layout: list
 show_author_byline: true
 show_post_date: false

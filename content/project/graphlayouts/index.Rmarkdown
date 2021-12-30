@@ -68,7 +68,7 @@ install.packages("graphlayouts")
 ```
 
 
-## Stress Majorization: Connected Network  
+## Stress Majorization  
 
 *This example is a bit of a special case since it exploits some weird issues in igraph.* 
 ```{r example}
@@ -89,8 +89,6 @@ ggraph(pa,layout="stress")+
   geom_node_point(col="black",size=0.3)+
   theme_graph()
 ```
-
-## Stress Majorization: Unconnected Network
 
 Stress majorization also works for networks with several components. It relies 
 on a bin packing algorithm to efficiently put the components in a rectangle, rather than a circle.
