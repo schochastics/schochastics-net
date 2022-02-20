@@ -19,7 +19,7 @@ links:
 - icon: info-circle
   icon_pack: fas
   name: tutorial
-  url:
+  url: https://mr.schochastics/material/netvizr
 subtitle: An R package for network visualization
 tags:
 - R-package

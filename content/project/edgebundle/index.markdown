@@ -15,7 +15,7 @@ links:
   icon_pack: fab
   name: code
   url: https://github.com/schochastics/edgebundle
-subtitle: An R package implementeing  edgebundling techniques
+subtitle: An R package implementing  edgebundling techniques
 tags:
 - R-package
 title: edgebundle

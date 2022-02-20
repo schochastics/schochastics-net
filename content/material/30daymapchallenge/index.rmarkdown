@@ -1,0 +1,49 @@
+---
+author: David Schoch 
+categories:
+  - data visualization
+date: "2021-12-09"
+date_end: 
+draft: false
+excerpt: My contributions to the 30DayMapchallenge
+featured: false
+layout: single
+links:
+  - icon: door-open
+    icon_pack: fas
+    name: code
+    url: https://github.com/schochastics/30daymapchallenge
+  - icon: door-open
+    icon_pack: fas
+    name: more detailed overview
+    url: http://schochastics.net/30daymapchallenge
+show_post_time: false
+title: "30DayMapchallenge 2021"
+subtitle: "My contributions to the 30DayMapchallenge"
+---
+
+```{r create_code, results='asis',echo=FALSE}
+fl <- list.files(".",pattern = "^[0-9]")
+themes <- c("Points", "Lines", "Polygons", "Hexagons", "Data challenge 1: OpenStreetMap", 
+"Red", "Green", "Blue", "Monochrome", "Raster", "3D", "Population", 
+"Data challenge 2: Natural Earth", "Map with a new tool", "Map made without using a computer", 
+"Urban/rural", "Land", "Water", "Island(s)", "Movement", "Elevation", 
+"Boundaries", "Data challenge 3: GHSL Global Human Settlement Layer", 
+"Historical map",  "Choropleth map", "Heatmap", 
+"The Earth is not flat", "NULL", "Metamapping day")
+for(i in 1:29){
+  if(i>24){
+  title <- paste0("# Day ",stringr::str_pad(i+1,2,"left","0")," - ",themes[i])
+  img_code <- paste0("<p align='center'> <a href='",fl[i],"' target='_blank'> <img src='",fl[i],"'> </a> </p>")
+  cat(title,"\n")
+  cat(img_code,"\n\n")  
+  } else{
+    title <- paste0("# Day ",stringr::str_pad(i,2,"left","0")," - ",themes[i])
+  img_code <- paste0("<p align='center'> <a href='",fl[i],"' target='_blank'> <img src='",fl[i],"'> </a> </p>")
+  cat(title,"\n")
+  cat(img_code,"\n\n")
+  }
+  
+}
+```
+

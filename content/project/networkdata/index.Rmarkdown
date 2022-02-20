@@ -45,7 +45,7 @@ The package contains a large variety of different network datasets (all in `igra
 - Tennis networks compiled from https://github.com/JeffSackmann (please give credit to him if you use this data) 
 - Star Wars Character Interactions (Episode 1-7) from https://github.com/evelinag/StarWars-social-network
 
-The package includes 980 datasets containing 2142 networks. 
+The package includes 982 datasets containing 2257 networks. 
 
 A list of all datasets can be obtained with
 ```{r data,eval=FALSE}

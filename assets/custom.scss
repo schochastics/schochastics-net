@@ -1,11 +1,18 @@
-// Override this file to add your own SCSS styling.
 @font-face {
-  font-family: 'Nova Square';
+    font-family: 'Nova Square';
+    src: url('../fonts/novasquare-regular-webfont.woff2') format('woff2'),
+         url('../fonts/novasquare-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    src: local(''),
-       url('../fonts/novasquare-regular-webfont.woff2') format('woff2'), 
-       url('../fonts/novasquare-regular-webfont.woff') format('woff'); 
+
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('../fonts/IBMPlexSans-Regular.woff2') format('woff2'),
+        url('../fonts/IBMPlexSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @media screen and (min-width: 56em) {
@@ -14,9 +21,9 @@
   }
 }
 
-.anchor-link{
+/*.anchor-link{
   
-}
+}*/
 
 /* underline nav color*/
 .site-links a::after,
@@ -42,4 +49,27 @@ figure figcaption h4,
 
 a.btn-links:hover{
   background-color: rgba(255,255,255,.1)!important;
+}
+
+/* about me stuff */
+.lead {
+  @extend .f4, .lh-copy;
+}
+
+.habout{
+  font-size: 3rem;
+  font-family: 'Nova Square';
+  font-weight: 700;
+}
+
+h1,h2,h4{
+  font-weight: 700;
+}
+
+h4.f4{
+  font-size: 1.75rem;
+}
+
+h1.f3{
+  font-weight: 700;
 }
