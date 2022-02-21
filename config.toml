@@ -32,7 +32,7 @@ enableEmoji = true
   orgLocal = ""
   description = "I am the team lead for Transparanet Social Analytics at GESIS CSS and develop tools in R"
   favicon = "/favicon.ico"
-  logo = "static/img/logo.svg"
+  logo = "/img/logo.svg"
   mainSections = ["publications", "project", "material"]
   navallcaps = true
   # show/hide social icons in site header & footer
