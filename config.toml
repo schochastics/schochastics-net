@@ -30,9 +30,9 @@ enableEmoji = true
 [params]
   orgName = "David Schoch"
   orgLocal = ""
-  description = "I am the Team Lead for Transparanet Social Analytic at GESIS and develop tools in R"
+  description = "I am the team lead for Transparanet Social Analytics at GESIS CSS and develop tools in R"
   favicon = "/favicon.ico"
-  logo = "/img/logo.svg"
+  logo = "static/img/logo.svg"
   mainSections = ["publications", "project", "material"]
   navallcaps = true
   # show/hide social icons in site header & footer
@@ -41,7 +41,7 @@ enableEmoji = true
   socialInFooter = false
   # Default image for social sharing and search engines. 
   # Place image file in `static` folder and specify image name here.
-  sharing_image = "/img/logo.png"
+  sharing_image = "logo.png"
   # Twitter username (without @). Used when a visitor shares your site on Twitter.
   twitter = "schochastics"
   
