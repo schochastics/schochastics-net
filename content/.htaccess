@@ -1,2 +1,8 @@
-Redirect 301 /netVizR.html https://mr.schochastics/material/netvizr/
-Redirect 301 /netAnaR.html https://mr.schochastics/material/netanar/
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.mr.schochastics.net/$1 [R,L]
+
+Redirect 301 /netVizR.html https://mr.schochastics.net/material/netvizr/
+Redirect 301 /netAnaR.html https://mr.schochastics.net/material/netanar/
+
+ErrorDocument 404 https://mr.schochastics.net/404.html

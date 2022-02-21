@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://mr.schochastics.net"
 theme = "hugo-apero"
 languageCode = "en"
 title = "schochastics"
@@ -30,7 +30,7 @@ enableEmoji = true
 [params]
   orgName = "David Schoch"
   orgLocal = ""
-  description = "I am the Team Lead for Transparanet Social Analytic at GESIS and an avid developer in R"
+  description = "I am the Team Lead for Transparanet Social Analytic at GESIS and develop tools in R"
   favicon = "/favicon.ico"
   logo = "/img/logo.svg"
   mainSections = ["publications", "project", "material"]

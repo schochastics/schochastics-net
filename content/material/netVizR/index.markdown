@@ -1072,7 +1072,8 @@ The plot below shows an empirical example where the algorithm was able to uncove
 Left is the ordinary stress layout and right the backbone layout.
 
 ![](facebook.png)
-\## Dynamic networks
+
+## Dynamic networks
 
 People regularly ask me if it is possible to animate a network evolution with `ggraph` and `gganimate`.
 Unfortunately this is not yet possible. But fear not! There is a way to still get it done with some
