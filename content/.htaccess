@@ -4,5 +4,6 @@ RewriteRule ^(.*)$ https://www.mr.schochastics.net/$1 [R,L]
 
 Redirect 301 /netVizR.html https://mr.schochastics.net/material/netvizr/
 Redirect 301 /netAnaR.html https://mr.schochastics.net/material/netanar/
+Redirect 301 /blog http://blog.schochastics.net
 
 ErrorDocument 404 https://mr.schochastics.net/404.html

@@ -867,12 +867,14 @@ ggraph(K50,"stress")+
 
 I'll spare the technical details of the leiden method. If you are interested, check out the [original paper](https://www.nature.com/articles/s41598-019-41695-z). 
 
-Modularity maximization is not the only available tool to cluster networks. (Stochastic) Blockmodels, for instance,
-can also be used to find community structures. Several packages exist for this, such as `randnet` or `blockmodels`.
-
 ---
 
 # Blockmodeling
+
+Blockmodeling is similar to 
+
+(Stochastic) Blockmodels, for instance,
+can also be used to find community structures. Several packages exist for this, such as `randnet` or `blockmodels`.
 
 ---
 
