@@ -5,10 +5,10 @@ date: "2022-03-17"
 draft: false
 excerpt: Online political astroturfing—hidden information campaigns in which a political actor mimics genuine citizen behavior by incentivizing agents to spread information online—has become prevalent on social media. Such inauthentic information campaigns threaten to undermine the Internet’s promise to more equitable participation in public debates. We argue that the logic of social behavior within the campaign bureaucracy and principal–agent problems lead to detectable activity patterns among the campaign’s social media accounts...
 layout: single
-subtitle: Franziska B Keller, David Schoch, Sebastian Stier & JungHwan Yang
+subtitle: David Schoch, Franziska B Keller, Sebastian Stier & JungHwan Yang
 title: "Coordination patterns reveal online political astroturfing across the world"
 links:
-- icon: file-invoice-dollar
+- icon: file-pdf
   icon_pack: fas
   name: pdf 
   url: https://www.nature.com/articles/s41598-022-08404-9#Sec9
