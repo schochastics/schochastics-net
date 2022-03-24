@@ -11,7 +11,7 @@ links:
 - icon: file-pdf
   icon_pack: fas
   name: pdf 
-  url: https://www.nature.com/articles/s41598-022-08404-9#Sec9
+  url: https://www.nature.com/articles/s41598-022-08404-9
 - icon: code
   icon_pack: fas
   name: code
