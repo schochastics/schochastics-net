@@ -153,12 +153,59 @@ ggraph("stress",bbox=10) +
 
 
 # Centrality
+The package includes all centrality indices implemented in `igraph` and additionally all 
+that are made available in the `netrankr` package. All indices can be found in the 
+function group `centrality_*()`.
+
+```{r centrality_example}
+flo_tidy %>% 
+  activate("nodes") %>% 
+  mutate(degree = centrality_degree(),
+         betweenness = centrality_betweenness()) %>% 
+ggraph("stress",bbox=10) + 
+  geom_edge_link0(edge_color = "black")+
+  geom_node_point(shape = 21, aes(size=degree,fill=betweenness))+
+  geom_node_text(aes(label = name))+
+  scale_fill_gradient(low="#104E8B",high="#CD2626")+
+  scale_size(range = c(4,10))+
+  theme_graph()
+
+```
+
 
 # Clustering
 
+Similar to centrality, all clustering algorithms from `igraph` are available via `group_*()`
+
+```{r clustering_example}
+# create random graph with group structure (igraph equivalent is sample_islands())
+play_islands(4, 12, 0.8, 4) %>% 
+    mutate(community = as.factor(group_louvain())) %>% 
+    ggraph(layout = 'stress') + 
+    geom_edge_link0() + 
+    geom_node_point(aes(fill = community), shape = 21, size = 6) + 
+    theme_graph()
+```
+
+Coupling this with what we learned above, we can color the edges according to the cluster
+they belong to.
+```{r clustering_example2}
+play_islands(4, 12, 0.8, 4) %>% 
+  mutate(community = as.factor(group_louvain())) %>% 
+  activate("edges") %>% 
+  mutate(community = as.factor(ifelse(.N()$community[from]==.N()$community[to],.N()$community[from],5))) %>% 
+  ggraph(layout = 'stress') + 
+  geom_edge_link0(aes(edge_colour=community),show.legend = FALSE) + 
+  geom_node_point(aes(fill = community), shape = 21, size = 6) + 
+  scale_fill_brewer(palette = "Set3")+
+  scale_edge_color_brewer(palette = "Set3")+
+  theme_graph(background = "grey88")
+```
+
+
 # Shortcomings
 
-The tidy framework works well in general, but there are some 
+The tidy framework works well in general, but there are... 
 
 # Further Reading
 <!-- See [here](https://www.data-imaginist.com/2017/introducing-tidygraph/) for a brief introduction to `tidygraph` by its maintainer Thomas Lin Pedersen    -->
