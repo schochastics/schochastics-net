@@ -14,8 +14,8 @@ links:
   url: https://doi.org/10.1080/10584609.2019.1661888
 - icon: file-pdf
   icon_pack: fas
-  name: local pdf
-  url: https://gesisbox.gesis.org/index.php/s/FA2FYTtE74sTxcT
+  name: open pdf
+  url: https://www.research.manchester.ac.uk/portal/files/128397468/Astroturfing_Kelleretal_2019.pdf
 - icon: code
   icon_pack: fas
   name: code

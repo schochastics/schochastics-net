@@ -34,7 +34,9 @@ Interested in specific topics? Here are some shortcuts
 # Introduction
 
 The main focus of this tutorial is to introduce the tidy approach for network analysis.
-For a general and more basic introduction to network analysis in R, see my [dedicated tutorial](https://www.mr.schochastics.net/material/netanar/)
+For a general and more basic introduction to network analysis in R, see my [dedicated tutorial](https://www.mr.schochastics.net/material/netanar/). The tutorial will focus on the most
+relevant functions for empirical research. A more complete overview of the complete functionality can be found
+[here](https://www.data-imaginist.com/2017/introducing-tidygraph/).
 
 # Required libraries
 
@@ -200,6 +202,20 @@ play_islands(4, 12, 0.8, 4) %>%
   scale_fill_brewer(palette = "Set3")+
   scale_edge_color_brewer(palette = "Set3")+
   theme_graph(background = "grey88")
+```
+
+# Other node or edge level functions
+
+`tidygraphs` harmonizes many other available functions in igraph to make them easier accessible.
+The easiest way to check what is available is to look at the function groups `node_*()` and `edge_*()`.
+Some simple examples are shown below.
+```{r distance_to_medici}
+flo_tidy %>% 
+  mutate(dist2Medici = node_distance_to(nodes = 9)) %>% 
+  activate("edges") %>% 
+  mutate(edge2Medici=edge_is)
+  ggraph("stress") + 
+  geom_edge_link0()
 ```
 
 

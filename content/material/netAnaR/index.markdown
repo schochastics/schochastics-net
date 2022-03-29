@@ -28,7 +28,7 @@ subtitle: "using igraph and related packages"
 
 
 
-(under construction; last update 2022-02-20)
+(under construction; last update 2022-03-25)
 
 # Shortcuts
 
@@ -42,6 +42,7 @@ Concepts
 - [Centrality](#centrality) ([Use Case](#use-case-florentine-families))  
 - [Cliques and Clustering](#cliques-and-clustering)
 - [Blockmodeling](#blockmodeling)
+- [Core-periphery](#core-periphery-structures)
 
 Special types of networks
 - [two mode networks](#-two-mode-networks)
@@ -927,12 +928,18 @@ The figure below shows the clusters computed with the louvain method in grey and
 
 I'll spare the technical details of the leiden method. If you are interested, check out the [original paper](https://www.nature.com/articles/s41598-019-41695-z). 
 
-Modularity maximization is not the only available tool to cluster networks. (Stochastic) Blockmodels, for instance,
+---
+
+# Blockmodeling
+
+Blockmodeling is similar to 
+
+(Stochastic) Blockmodels, for instance,
 can also be used to find community structures. Several packages exist for this, such as `randnet` or `blockmodels`.
 
 ---
 
-# Blockmodeling
+# Core-Periphery structures
 
 ---
 

@@ -20,7 +20,7 @@ subtitle: "using the tidygraph package"
 
 
 
-(under construction; last update 2022-03-24)
+(under construction; last update 2022-03-25)
 
 # Shortcuts
 
@@ -29,7 +29,9 @@ Interested in specific topics? Here are some shortcuts
 # Introduction
 
 The main focus of this tutorial is to introduce the tidy approach for network analysis.
-For a general and more basic introduction to network analysis in R, see my [dedicated tutorial](https://www.mr.schochastics.net/material/netanar/)
+For a general and more basic introduction to network analysis in R, see my [dedicated tutorial](https://www.mr.schochastics.net/material/netanar/). The tutorial will focus on the most
+relevant functions for empirical research. A more complete overview of the complete functionality can be found
+[here](https://www.data-imaginist.com/2017/introducing-tidygraph/).
 
 # Required libraries
 

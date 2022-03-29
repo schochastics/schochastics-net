@@ -48,6 +48,7 @@ Concepts
 - [Centrality](#centrality) ([Use Case](#use-case-florentine-families))  
 - [Cliques and Clustering](#cliques-and-clustering)
 - [Blockmodeling](#blockmodeling)
+- [Core-periphery](#core-periphery-structures)
 
 Special types of networks
 - [two mode networks](#-two-mode-networks)
@@ -875,6 +876,10 @@ Blockmodeling is similar to
 
 (Stochastic) Blockmodels, for instance,
 can also be used to find community structures. Several packages exist for this, such as `randnet` or `blockmodels`.
+
+---
+
+# Core-Periphery structures
 
 ---
 
