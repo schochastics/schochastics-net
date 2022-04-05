@@ -20,7 +20,7 @@ subtitle: "using the tidygraph package"
 
 
 
-(under construction; last update 2022-03-25)
+(under construction; last update 2022-04-05)
 
 # Shortcuts
 
@@ -281,10 +281,34 @@ play_islands(4, 12, 0.8, 4) %>%
 
 <img src="{{< blogdown/postref >}}index_files/figure-html/clustering_example2-1.png" width="100%" />
 
+# Other node or edge level functions
+
+`tidygraphs` harmonizes many other available functions in igraph to make them easier accessible.
+The best way to check what is available is to look at the function groups `node_*()` and `edge_*()`.
+Some simple examples are shown below.
+
+```r
+# the node id of the Medici is 9
+flo_tidy %>% 
+  activate("nodes") %>% 
+  mutate(dist2Medici = node_distance_to(nodes = 9)) %>% 
+  activate("edges") %>% 
+  mutate(edge2Medici = edge_is_incident(i = 9)) %>% 
+  ggraph("stress") + 
+  geom_edge_link0(aes(edge_color = edge2Medici))+
+  geom_node_point(aes(fill = dist2Medici),size = 9,shape = 21)+
+  theme_graph()
+```
+
+<img src="{{< blogdown/postref >}}index_files/figure-html/distance_to_medici-1.png" width="100%" />
+
 
 # Shortcomings
 
-The tidy framework works well in general, but there are... 
+The tidy framework works well in general but there are some shortcomings. So far, only
+basic network analytic methods are supported. This is enough for many tasks but as soon as more 
+advanced techniques are needed, you are forced to switch to the "untidy" way again. A lot of 
+coding but also conceptual work is needed to advance the framework further. For instance, how do ERGMs or SAOMs fit into this? Maybe there is a way to use `tidymodels`, but that is beyond the scope for now.
 
 # Further Reading
 <!-- See [here](https://www.data-imaginist.com/2017/introducing-tidygraph/) for a brief introduction to `tidygraph` by its maintainer Thomas Lin Pedersen    -->
