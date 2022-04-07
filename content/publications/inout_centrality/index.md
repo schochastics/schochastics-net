@@ -11,7 +11,7 @@ links:
 - icon: file-invoice-dollar
   icon_pack: fas
   name: pdf 
-  url: 
+  url: https://doi.org/10.1016/j.socnet.2022.03.005
 - icon: file-pdf
   icon_pack: fas
   name: local pdf
@@ -33,4 +33,4 @@ technical results are presented including the extension of the range of
 permissible β parameters to negative values, similar to traditional β-
 centrality.
 
-**Social Networks** (forthcoming), 2022
+*Social Networks* 70:334-340, 2022
