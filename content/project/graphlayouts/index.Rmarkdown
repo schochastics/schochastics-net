@@ -4,8 +4,8 @@ categories:
 date: "2019-07-12"
 show_post_date: false
 draft: false
-excerpt: The package implements several new layout algorithms to visualize networks which are not provided by standarad graph packages. 
-    Most are based on the concept of stress majorization by. Some more specific algorithms allow to emphasize hidden group structures in networks, focus on specific nodes or specific types of networks.
+excerpt: The package implements several new layout algorithms to visualize networks which are not provided by standard graph packages. 
+    Most are based on the concept of stress majorizatio. Some more specific algorithms allow to emphasize hidden group structures in networks, focus on specific nodes or specific types of networks.
 layout: single
 links:
 - icon: door-open
